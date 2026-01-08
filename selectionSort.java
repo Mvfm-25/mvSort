@@ -7,10 +7,6 @@
 // 1) Encontrar o menor elemento de determinada lista não ordenada e movê-lo de posição para o primeiro elemento da lista ordenada.
 // 2) Desconsiderar o primeiro elemento dessa 'nova' lista e continuar com o processo.
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-
 public class selectionSort {
     public Integer[] sort(Integer[] lista){
 
