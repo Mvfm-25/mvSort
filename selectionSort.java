@@ -24,7 +24,8 @@ public class selectionSort {
             return lista;
         }
 
-        for(int i = 0; i < lista.length; i++){
+        // For corrigido pra não ter que fazer última iteração.
+        for(int i = 0; i < lista.length - 1; i++){
             // Assume primeiro elemento como sendo menor da lista.
             int indMin = i;
             // Procura o verdadeiro valor mínimo.
@@ -37,10 +38,14 @@ public class selectionSort {
                 }
             }
 
-            // Faz a troca de fato
-            Integer temp = lista[i];
-            lista[i] = lista[indMin];
-            lista[indMin] = temp;
+            // Faz a troca de fato, caso necessário.
+            if(indMin != i){
+                Integer temp = lista[i];
+                lista[i] = lista[indMin];
+                lista[indMin] = temp;
+                System.out.println("Troca realizada!");
+            }
+
         }
 
         return lista;
