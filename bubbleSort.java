@@ -2,7 +2,7 @@
 // O mais simples de todos, potencialmente, o menos efetivo.
 // [mvfm]
 //
-// Criado : 07/01/2026  ||  Última modificação : 07/01/2026
+// Criado : 08/01/2026  ||  Última modificação : 09/01/2026
 
 // Passos :
 // 1) Seleciona par de itens da lista & compara
@@ -24,7 +24,7 @@ public class bubbleSort {
 
         // Limites de cada 'for' foi definido desse jeito pra evitar trocas e movimentos desnecessários.
         // Não vai ajudar muito mesmo assim, mas é bom se prevenir.
-        for(int i = 0; i < lista.length -1; i++){
+        for(int i = 0; i < lista.length - 1; i++){
             for(int j = 0; j < lista.length - i - 1; j++){
                 // Teste para troca
                 if(lista[j] > lista[j + 1]){
