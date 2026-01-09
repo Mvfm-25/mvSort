@@ -7,7 +7,6 @@
 public class QuickSort implements Sort{
 
     public Integer[] sort(Integer[] lista){
-
         return lista;
     }
 
