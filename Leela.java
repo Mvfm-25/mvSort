@@ -17,6 +17,7 @@ public class Leela {
         // Agora fica mais modular!
         testaSort(new SelectionSort(), lista, "Selection Sort");
         testaSort(new BubbleSort(), lista, "Bubble Sort");
+        testaSort(new QuickSort(), lista, "Quick Sort");
     }
 
     // Função para facilitação de testes de cada uma das implementações.
