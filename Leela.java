@@ -5,20 +5,21 @@
 
 import java.util.Arrays;
 
-public class leela {
+public class Leela {
 
     public static void main(String[] args) {
-        // Chamando sorts
-        selectionSort selection = new selectionSort();
-        bubbleSort bubble = new bubbleSort();
+        // Chamando sort.
+        Sort sorter = new BubbleSort();
 
         Integer[] lista1 = {7, 4, 3, 2, 1, 6, 8, 5, 9, 10};
         // Re-uso temporário, ainda não quero retornar novas listas.
         Integer[] lista2 = {7, 4, 3, 2, 1, 6, 8, 5, 9, 10};
         System.out.println("Lista original : " + Arrays.toString(lista1));
 
-        System.out.println("Selection sort : " + Arrays.toString(selection.sort(lista1)));
-        System.out.println("Buble sort : " + Arrays.toString(bubble.sort(lista2)));
+        System.out.println("Selection sort : " + Arrays.toString(sorter.sort(lista1)));
+
+        sorter = new BubbleSort();
+        System.out.println("Buble sort : " + Arrays.toString(sorter.sort(lista2)));
     }
 
 }

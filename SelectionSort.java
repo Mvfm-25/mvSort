@@ -7,7 +7,8 @@
 // 1) Encontrar o menor elemento de determinada lista não ordenada e movê-lo de posição para o primeiro elemento da lista ordenada.
 // 2) Desconsiderar o primeiro elemento dessa 'nova' lista e continuar com o processo.
 
-public class selectionSort {
+public class SelectionSort implements Sort{
+
     public Integer[] sort(Integer[] lista){
 
         // Lidando com erros diretamente.

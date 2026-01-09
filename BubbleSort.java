@@ -9,7 +9,7 @@
 // 2) Caso necessário, uma troca de posição é feita.
 // 3) Múltiplas passagens pela lista serão necessárias no pior caso.
 
-public class bubbleSort {
+public class BubbleSort implements Sort{
 
     public Integer[] sort(Integer[] lista){
         Integer temp;
